@@ -19,5 +19,15 @@ public class Dwarf extends Fighter{
         this.bonusDamage = bonusDamage;
     }
 
+    public void attack(IFight opponent){
+        opponent.defend(this.getDamage());
+    }
+
+    private int getDamage() {
+        return this.getActiveWeapon().getDamage() + this.bonusDamage;
+    }
+
+
+
 
 }

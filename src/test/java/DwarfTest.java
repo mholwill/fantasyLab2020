@@ -9,6 +9,7 @@ import static org.junit.Assert.assertEquals;
 public class DwarfTest {
 
     Dwarf dwarf;
+    Dwarf enemyDwarf;
     Axe axe;
     Sword sword;
 
@@ -17,6 +18,7 @@ public class DwarfTest {
     public void before(){
         sword = new Sword();
         axe = new Axe();
+        enemyDwarf = new Dwarf(30, "Malcolm", axe, 3);
         dwarf = new Dwarf(30, "Harrison", axe, 5);
     }
 
@@ -33,7 +35,22 @@ public class DwarfTest {
         assertEquals(sword, dwarf.getActiveWeapon());
     }
 
-    
+    @Test
+    public void canDefend(){
+        dwarf.defend(10);
+        assertEquals(20, dwarf.getCurrentHealth());
+    }
+
+    @Test
+    public void canAttack(){
+        dwarf.attack(enemyDwarf);
+        assertEquals(20, enemyDwarf.getCurrentHealth());
+    }
+
+
+
+
+
 
 
 }

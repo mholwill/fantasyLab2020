@@ -4,7 +4,7 @@ import weapons.Weapon;
 
 import java.util.ArrayList;
 
-public abstract class Fighter extends Player{
+public abstract class Fighter extends Player implements IFight{
 
     private Weapon activeWeapon;
     private ArrayList<Weapon> inventory;
@@ -35,5 +35,9 @@ public abstract class Fighter extends Player{
 
     public void changeWeapon(int index){
         this.activeWeapon = this.inventory.get(index);
+    }
+
+    public void defend(int damage){
+        this.setCurrentHealth(this.getCurrentHealth() - damage);
     }
 }
