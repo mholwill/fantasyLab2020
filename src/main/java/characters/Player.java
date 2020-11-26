@@ -1,11 +1,11 @@
 package characters;
 
-public abstract class Character implements IHealable {
+public abstract class Player implements IHealable {
     private int maxHealth;
     private int currentHealth;
     private String name;
 
-    public Character(int maxHealth, String name) {
+    public Player(int maxHealth, String name) {
         this.maxHealth = maxHealth;
         this.currentHealth = maxHealth;
         this.name = name;
