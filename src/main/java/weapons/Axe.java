@@ -1,4 +1,7 @@
 package weapons;
 
-public class Axe {
+public class Axe extends Weapon {
+    public Axe() {
+        super(5);
+    }
 }
