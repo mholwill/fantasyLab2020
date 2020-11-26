@@ -1,5 +1,7 @@
 package tools;
 
-public abstract class Tool {
-    abstract void apply(Character target);
+import characters.Player;
+
+public interface ITool {
+    void apply(Player target);
 }

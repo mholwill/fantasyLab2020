@@ -1,4 +1,5 @@
 package characters;
 
-public class IHealable {
+public interface IHealable {
+    void heal(int amount);
 }
