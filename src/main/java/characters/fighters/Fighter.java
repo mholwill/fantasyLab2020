@@ -1,10 +1,12 @@
-package characters;
+package characters.fighters;
 
+import characters.IFight;
+import characters.Player;
 import weapons.Weapon;
 
 import java.util.ArrayList;
 
-public abstract class Fighter extends Player implements IFight{
+public abstract class Fighter extends Player {
 
     private Weapon activeWeapon;
     private ArrayList<Weapon> inventory;
@@ -35,10 +37,6 @@ public abstract class Fighter extends Player implements IFight{
 
     public void changeWeapon(int index){
         this.activeWeapon = this.inventory.get(index);
-    }
-
-    public void defend(int damage){
-        this.setCurrentHealth(this.getCurrentHealth() - damage);
     }
 
     public void attack(IFight opponent){

@@ -1,4 +1,4 @@
-import characters.Dwarf;
+import characters.fighters.Dwarf;
 import org.junit.Before;
 import org.junit.Test;
 import weapons.Axe;

@@ -1,5 +1,6 @@
-package characters;
+package characters.spellcasters;
 
+import characters.IFight;
 import creatures.Creature;
 
 public class Wizard extends Spellcaster {

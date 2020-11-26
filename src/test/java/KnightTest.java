@@ -1,5 +1,5 @@
-import characters.Dwarf;
-import characters.Knight;
+import characters.fighters.Dwarf;
+import characters.fighters.Knight;
 import org.junit.Before;
 import org.junit.Test;
 import weapons.Sword;

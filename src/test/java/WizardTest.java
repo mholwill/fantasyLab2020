@@ -1,4 +1,4 @@
-import characters.Wizard;
+import characters.spellcasters.Wizard;
 import creatures.Creature;
 import org.junit.Before;
 import org.junit.Test;

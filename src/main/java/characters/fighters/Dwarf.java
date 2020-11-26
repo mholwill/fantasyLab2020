@@ -1,5 +1,6 @@
-package characters;
+package characters.fighters;
 
+import characters.IFight;
 import weapons.Weapon;
 
 public class Dwarf extends Fighter{

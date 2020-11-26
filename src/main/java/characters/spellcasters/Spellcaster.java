@@ -1,12 +1,14 @@
-package characters;
+package characters.spellcasters;
 
+import characters.IFight;
+import characters.Player;
 import creatures.Creature;
 import spells.Spell;
 
 import java.util.ArrayList;
 import java.util.Random;
 
-public abstract class Spellcaster extends Player implements IFight {
+public abstract class Spellcaster extends Player {
     private ArrayList<Spell> spells;
     private Creature pet;
 
@@ -51,7 +53,6 @@ public abstract class Spellcaster extends Player implements IFight {
     }
 
     public void defend(int damage) {
-        int netDamage = damage - this.pet.getDefense();
-        setCurrentHealth(getCurrentHealth() - netDamage);
+        super.defend(damage - this.pet.getDefense());
     }
 }

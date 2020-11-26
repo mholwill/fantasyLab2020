@@ -1,6 +1,6 @@
 package characters;
 
-public abstract class Player implements IHealable {
+public abstract class Player implements IFight {
     private int maxHealth;
     private int currentHealth;
     private String name;
@@ -32,6 +32,14 @@ public abstract class Player implements IHealable {
 
     public void setCurrentHealth(int currentHealth) {
         this.currentHealth = currentHealth;
+    }
+
+    public void takeDamage(int damage) {
+        currentHealth = currentHealth - damage;
+    }
+
+    public void defend(int damage) {
+        takeDamage(damage);
     }
 
     public String getName() {
