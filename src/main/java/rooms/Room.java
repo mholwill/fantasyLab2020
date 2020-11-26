@@ -1,5 +1,7 @@
 package rooms;
 
+import characters.Party;
+
 public abstract class Room {
     private String name;
 
@@ -14,4 +16,6 @@ public abstract class Room {
     public void setName(String name) {
         this.name = name;
     }
+
+    abstract void play(Party party);
 }
