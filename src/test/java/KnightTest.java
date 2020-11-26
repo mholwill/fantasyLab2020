@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 import characters.fighters.Dwarf;
 import characters.fighters.Knight;
-=======
-import characters.Dwarf;
->>>>>>> 8df393e50170264187aa849889967cfe4dec52f1
 import org.junit.Before;
 import org.junit.Test;
 import weapons.Sword;
