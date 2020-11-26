@@ -40,4 +40,8 @@ public abstract class Fighter extends Player implements IFight{
     public void defend(int damage){
         this.setCurrentHealth(this.getCurrentHealth() - damage);
     }
+
+    public void attack(IFight opponent){
+        opponent.defend(this.activeWeapon.getDamage());
+    }
 }
