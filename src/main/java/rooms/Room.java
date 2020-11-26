@@ -17,5 +17,5 @@ public abstract class Room {
         this.name = name;
     }
 
-    abstract void play(Party party);
+    abstract boolean play(Party party);
 }

@@ -60,4 +60,16 @@ public class Party {
     public void addSupport(Support support) {
         supports.add(support);
     }
+
+    public void performSupport() {
+        for (Support support : supports) {
+            for (IFight player : players) {
+                support.support(player);
+            }
+        }
+    }
+
+    public void removePlayer(int index) {
+        players.remove(index);
+    }
 }

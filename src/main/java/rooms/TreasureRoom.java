@@ -18,7 +18,8 @@ public class TreasureRoom extends Room {
         this.treasure = treasure;
     }
 
-    public void play(Party party) {
+    public boolean play(Party party) {
         party.addToRiches(treasure);
+        return true;
     }
 }

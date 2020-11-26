@@ -1,5 +1,6 @@
 package tools;
 
+import characters.IFight;
 import characters.Player;
 
 public class HealingTool implements ITool {
@@ -9,7 +10,7 @@ public class HealingTool implements ITool {
         this.healingAmount = healingAmount;
     }
 
-    public void apply(Player target) {
+    public void apply(IFight target) {
         target.heal(healingAmount);
     }
 }

@@ -1,5 +1,6 @@
 package characters.supports;
 
+import characters.IFight;
 import characters.Player;
 import tools.ITool;
 
@@ -28,7 +29,7 @@ public class Support {
         this.tool = tool;
     }
 
-    public void support(Player target) {
+    public void support(IFight target) {
         tool.apply(target);
     }
 }

@@ -1,7 +1,8 @@
 package tools;
 
+import characters.IFight;
 import characters.Player;
 
 public interface ITool {
-    void apply(Player target);
+    void apply(IFight target);
 }
